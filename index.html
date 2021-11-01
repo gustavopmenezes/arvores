@@ -1,45 +1,74 @@
 <!DOCTYPE html>
-	<html>
-		<head>
-			<title>🌳 YBYRA</title>
-			<!-- link to main stylesheet -->
-			<link rel="stylesheet" type="text/css" href="/css/main.css">
-		</head>
-		<body>
-			<script src="/js/jquery.min.js"></script> <!-- Like this! -->
-			
-			<img src="https://images.squarespace-cdn.com/content/v1/5b6c3e83f793925fcfacdfcf/1534799576280-F73F97QQ1RUUJZVK7D0I/2e640162616727.5a96087560772.png?format=2500w" width=30%></img>
-	    		<ul id="top-menu">
-		        	<li class="active"><a href="https://arvores.github.io/#projeto">O Projeto</a></li>
-	        		<li><a href="#dados">Dados</a></li>
-	        		<li><a href="#ranking">Pódium</a></li>
-				<li><a href="#score">Score</a></li>
-				<li><a href="#contribuir">Contribuir</a></li>
-<!-- 				<li><a href="/assets/mapa-arvores-ourinhos__v1.html">(Mapa protótipo)</a></li> -->
-	    		</ul>
-			
-			<a id="projeto">Projeto</a>
-			
-			<a id="dados">Dados</a>
+<html>
+<head>
+<!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+<link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@1,700&family=Nunito:wght@700&family=Yellowtail&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" type="text/css" href="./css/normalize.css"><link>
+<link rel="stylesheet" type="text/css" href="./css/main.css"><link>
+  <title>🌳 YBYRA</title>
+</head>
+<body>
+  <nav>
+    <!-- <a href="#">YBYRA</a> -->
+    <img href="#" src="./img/logo.png" width=18%></img>
+    <ul>
+      <li><a href="#dados">Dados</a></li>
+      <li><a href="#score">Score</a></li>
+      <li><a href="#ranking">Ranking</a></li>
+      <li><a href="#contribuir">Contribuir</a></li>
+      <li><a href="./blog">Blog</a></li>
+    </ul>
+  </nav>
 
-			<a id="ranking">
-				<img src="https://i.ibb.co/HxnVSKX/Kahoot-1.png" alt="Pódium">/<img>
-			</a>
-			
-			<a id="score">Score: 5.372 🌳 </a>
-			
-			<a id="contribuir">Contribuir</a>
-			
-			<div class="container">
-			
-			{{ content }}
-			
-			</div><!-- /.container -->
-			<footer>
-	    		<ul>
-	        		<li><a href="mailto:gustavopmenezes@usp.br">email</a></li>
-	        		<li><a href="https://github.com/arvores">github.com/arvores</a></li>
-				</ul>
-			</footer>
-		</body>
-	</html>
+  <header id="projeto">
+    <h1>Mapeamento das Árvores</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <a href="#dados" class="botao">🕊️ Partiu!</a>
+  </header>
+
+  <main>
+  <section id="dados">
+    <h2>Dados</h2>
+    <div style="float:left">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+    <div style="float:right">
+      <img src="./img/dataframe.png" alt='Dados'></img>
+      <a href="#dados" class="botao">Baixar</a>
+    </div>
+  </section>
+
+  <section id="score">
+    <h2>Total Score:  25.342 🌳</h2>
+  </section>
+
+  <section id="ranking">
+    <h2>Ranking</h2>
+    <div style="float:left">
+      <img src="./img/Kahoot-1.png" alt='Dados'></img>
+      <!-- <img src="./img/example4.png" alt='Dados'></img> -->
+    </div>
+    <div style="float:right">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+    
+  </section>
+
+  <section id="contribuir">
+    <h2>Contribuir</h2>
+    <div>
+      <!-- INICIO FORMULARIO BOTAO PAGSEGURO -->
+  <form action="https://pagseguro.uol.com.br/checkout/v2/donation.html" method="post">
+  <!-- NÃO EDITE OS COMANDOS DAS LINHAS ABAIXO -->
+  <input type="hidden" name="currency" value="BRL" />
+  <input type="hidden" name="receiverEmail" value="gpm@hotmail.com.br" />
+  <input type="hidden" name="iot" value="button" />
+  <input type="image" src="https://stc.pagseguro.uol.com.br/public/img/botoes/doacoes/209x48-doar-assina.gif" name="submit" alt="Pague com PagSeguro - é rápido, grátis e seguro!" />
+  </form>
+  <!-- FINAL FORMULARIO BOTAO PAGSEGURO -->
+  </div>
+  </section>
+  </main>
+</body>
+</html>
